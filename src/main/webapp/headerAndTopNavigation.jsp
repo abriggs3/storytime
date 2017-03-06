@@ -9,16 +9,16 @@
     <meta name="description" content="coolstuff">
     <meta name="author" content="aaron briggs">
 
-    <title>FanFic Interactive-${title}</title>
+    <title>TwistedTrail-${title}</title>
 
     <!-- main javascript file -->
-    <script src="js/fanficinteractive.js"></script>
+    <script src="js/twistedtrail.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/site_specific.css" rel="stylesheet">
+    <link href="css/twistedtrail.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -31,13 +31,15 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
 
 
 <body>
 
-<div class="brand">FanFic Interactive</div>
-<div class="subtitle-bar">Where fans make great writing better</div>
+<div class="brand">TwistedTrail</div>
+<div class="subtitle-bar">cooperative interactive story creation </div>
 
 <!-- Navigation -->
 <nav class="navbar navbar-default" role="navigation">
@@ -51,7 +53,7 @@
                 <span class="icon-bar"></span>
             </button>
             <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-            <a class="navbar-brand" href="index.jsp">FanFic Interactive</a>
+            <a class="navbar-brand" href="index.jsp">TwistedTrail</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -60,7 +62,7 @@
                     <a href="index.jsp">Home</a>
                 </li>
                 <li>
-                    <a href="getStarted.jsp">Get Started</a>
+                    <a href="getStarted.jsp">Get Twisted</a>
                 </li>
                 <li>
                     <a href="blog.jsp">Blog</a>

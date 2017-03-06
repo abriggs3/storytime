@@ -37,7 +37,7 @@
                 <h2 class="brand-before">
                     <small>Welcome to</small>
                 </h2>
-                <h1 class="brand-name">FanFic Interactive</h1>
+                <h1 class="brand-name">TwistedTrail</h1>
                 <hr class="tagline-divider">
                 <h2>
                     <small>By
@@ -52,21 +52,25 @@
         <div class="box">
             <div class="col-lg-12">
                 <hr>
-                <h2 class="intro-text text-center">The fan-site you have been waiting for
+                <h2 class="intro-text text-center">Control. Yeah, wouldn't you love to have some control
+                    over fate? I think we all would, and now your chance
                     <strong>is here</strong>
                 </h2>
                 <hr>
                 <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
                 <hr class="visible-xs">
-                <p>We are fans for a reason; we love our shows and books. We love the just the way that they are--that's a given.</p>
-                <p>But . . .</p>
-                <p>Deep down inside, a part of every fan wants to get just a bit closer. A little part of us is
-                        always wishing, that our favorite character would have turned left, when they turned right. Yeah,
-                        I know you are feeling me here. We aren't saying that original author didn't get it quite right.
-                        We are just saying that, we would like to know what happened, down the way, if that special left
-                        turn of our dreams would have come to pass. And because that left turn never happened, each of us
-                        has a little empty place inside that needs to be filled. </p>
-                <p>With the help of our fellow fans, and FanFic Interactive, that empty place will be empty no longer.</p>
+                <p>We are fans of books and movies for a reason; we love to shove the blah-bland world
+                    of everyday to the back burner and step away into a world this is just a bit more
+                    . . . interesting.</p>
+                <p>Books and movies are great, but deep down inside, a part of every one of us wants to get just a bit closer.
+                        A little part of us is always wishing, that our favorite character would have turned left, when
+                        they turned right. Yeah, you know what I am saying. Not to say that original author didn't
+                        get it quite right. It is just that, maybe, we would like to know what happened,
+                        down the way, if that special left turn of our dreams would have come to pass.
+                        And because that left turn, that little twist of fate, never happened, each of us
+                        has a little hollow place inside that needs to be filled. 
+                        With the help of the TwistedTrail community, you can twist fictional fate to your whims.</p>
+                <p>So rejoice. Let your hollow place be filled!</p>
             </div>
         </div>
     </div>
@@ -76,14 +80,14 @@
             <div class="col-lg-12">
                 <hr>
                 <h2 class="intro-text text-center">Check out the
-                    <strong>newest, highest rated and pathed content</strong>
+                    <strong>newest, highest rated and most twisted content</strong>
                 </h2>
                 <hr>
                 <p>Newest contributions</p>
                 <ul>
-                    <li>TODO__title date and what is new the story or the path</li>
-                    <li>TODO__title date and what is new the story or the path</li>
-                    <li>TODO__title date and what is new the story or the path</li>
+                    <li>TODO__title date and what is new the story or the twist</li>
+                    <li>TODO__title date and what is new the story or the twist</li>
+                    <li>TODO__title date and what is new the story or the twist</li>
                 </ul>
                 <p>Highest rated</p>
                 <ul>
@@ -91,11 +95,11 @@
                     <li>TODO__title rating</li>
                     <li>TODO__title rating</li>
                 </ul>
-                <p>Most pathed</p>
+                <p>Most twisted</p>
                 <ul>
-                    <li>TODO__title total paths</li>
-                    <li>TODO__title total paths</li>
-                    <li>TODO__title total paths</li>
+                    <li>TODO__title total twists</li>
+                    <li>TODO__title total twists</li>
+                    <li>TODO__title total twists</li>
                 </ul>
             </div>
         </div>

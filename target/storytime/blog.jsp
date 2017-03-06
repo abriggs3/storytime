@@ -6,7 +6,7 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Fan Fic Interactive
+                    <h2 class="intro-text text-center">TwistedTrail
                         <strong>blog</strong>
                     </h2>
                     <hr>

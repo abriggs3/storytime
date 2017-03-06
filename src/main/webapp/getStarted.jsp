@@ -7,7 +7,7 @@
                 <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center">About
-                        <strong>FanFic Interactive</strong>
+                        <strong>TwistedTrail</strong>
                     </h2>
                     <hr>
                 </div>
@@ -15,12 +15,13 @@
                     <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <p>FanFic Interactive takes fan fiction to a higher level.</p>
-                    <p>Through the team effort of our devoted FanFic Interactive contributors, we are able to present
-                            you a reading adventure where you control the choices your favorite characters make.</p>
-                    <p>Here, destiny lies in your hands. Get started by reading from our ever growing library of user submitted titles or
-                        jump right in and start creating your own interactive story.  And though we fully endorse fan fiction,
-                        if you have a great idea all of your own, go right ahead and submit it; we would love to read it.</p>
+                    <p>TwistedTrail takes user contributed fiction to a higher level.</p>
+                    <p>Through the cooperative effort of our devoted TwistedTrail contributors, we are able to present
+                            you a reading adventure where you control the choices the characters make.</p>
+                    <p>Here, fate lies in your hands. Get started by reading from our ever growing library of user submitted titles or
+                        jump right in and start creating your own interactive story.  TwistedTrail fully embraces fan fiction and
+                        totally original creations. So, whether you have a great idea all of your own or a new twist on something canon or
+                        classic go ahead and submit it; we would love to read it.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -43,7 +44,7 @@
                 </div>
                 <div class="col-sm-4 text-center">
                     <a href="#"><img class="img-responsive" src="http://placehold.it/750x450" alt=""></a>
-                    <h3><a href="#">Creating paths<br />
+                    <h3><a href="#">Creating twists<br />
                         <small>learn the details</small></a>
                     </h3>
                 </div>

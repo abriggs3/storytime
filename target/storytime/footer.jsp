@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p>Copyright &copy; FanFic Interactive 2017</p>
+                <p>Copyright &copy; TwistedTrail 2017</p>
             </div>
         </div>
     </div>
