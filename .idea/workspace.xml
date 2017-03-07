@@ -2,29 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b50d1653-c259-4812-b5a7-cacb4e05a0ff" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/contact.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/contact.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/css/site_specific.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/js/fanficinteractive.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/css/site_specific.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/twistedtrail.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/fanficinteractive.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.jms.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.resource.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/StoryProcessor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/StoryProcessor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/StoryProcessor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/submitAstory.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/submitStory.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/storytime/submitAstory.jsp" afterPath="$PROJECT_DIR$/target/storytime/submitStory.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime.war" afterPath="$PROJECT_DIR$/target/storytime.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/blog.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/blog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/getStarted.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/getStarted.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/headerAndTopNavigation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/headerAndTopNavigation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/rulesAndregulations.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/rulesAndregulations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/submitAstory.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/submitAstory.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/blog.jsp" afterPath="$PROJECT_DIR$/target/storytime/blog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/footer.jsp" afterPath="$PROJECT_DIR$/target/storytime/footer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storytime.iml" afterPath="$PROJECT_DIR$/storytime.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/getStarted.jsp" afterPath="$PROJECT_DIR$/target/storytime/getStarted.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/headerAndTopNavigation.jsp" afterPath="$PROJECT_DIR$/target/storytime/headerAndTopNavigation.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/index.jsp" afterPath="$PROJECT_DIR$/target/storytime/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/rulesAndregulations.jsp" afterPath="$PROJECT_DIR$/target/storytime/rulesAndregulations.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/submitAstory.jsp" afterPath="$PROJECT_DIR$/target/storytime/submitAstory.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/js/twistedtrail.js" afterPath="$PROJECT_DIR$/target/storytime/js/twistedtrail.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,72 +39,131 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="94" column="47" lean-forward="true" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rulesAndregulations.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/rulesAndregulations.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twistedtrail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="127" column="69" lean-forward="false" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
-              <folding>
-                <marker date="1488821393601" expanded="true" signature="4739:5573" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="4803:5429" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="4803:5504" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="4803:5542" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:5765" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:5766" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:5917" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:5918" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:5967" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:6048" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:6068" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="5615:6069" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="6327:7244" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="6389:6940" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="6389:7213" ph="..." />
-                <marker date="1488821393601" expanded="true" signature="7589:7715" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="submitAstory.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/submitAstory.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="86" column="28" lean-forward="false" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="213">
+                  <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="rulesAndregulations.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/rulesAndregulations.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="555">
+                  <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="getStarted.jsp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/getStarted.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="178">
+                  <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="submitStory.jsp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/submitStory.jsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="twistedtrail.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="158">
+                  <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+                  <folding>
+                    <marker date="1488856165721" expanded="true" signature="4739:5573" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="4803:5429" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="4803:5504" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="4803:5542" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:5771" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:5772" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6109" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6110" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6159" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6204" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6224" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6225" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="6483:7400" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="6545:7096" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="6545:7369" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="7533:7922" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="8053:8122" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="StoryProcessor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/StoryProcessor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" column="97" lean-forward="false" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="twistedtrail.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-112">
+                  <caret line="161" column="25" lean-forward="false" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+                  <folding>
+                    <marker date="1488856165721" expanded="true" signature="4739:5573" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="4803:5429" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="4803:5504" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="4803:5542" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:5771" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:5772" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6109" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6110" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6159" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6204" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6224" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="5615:6225" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="6483:7400" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="6545:7096" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="6545:7369" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="7533:7922" ph="..." />
+                    <marker date="1488856165721" expanded="true" signature="8053:8122" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Jsp File" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,15 +171,17 @@
     <findStrings>
       <find>Business Casual</find>
       <find>3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</find>
-      <find>Fan Fic Interactive</find>
       <find>FanFic Interactive</find>
       <find>path</find>
+      <find>Fan Fic Interactive</find>
+      <find>submitAstory</find>
     </findStrings>
     <replaceStrings>
       <replace>FanFic Interactive</replace>
       <replace>Where fans make great writing better</replace>
-      <replace>TwistedTrail</replace>
       <replace>twist</replace>
+      <replace>submitStory</replace>
+      <replace>TwistedTrail</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -167,8 +227,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/getStarted.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/twistedtrail.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/submitAstory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/Hello.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/HelloForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StoryProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/submitStory.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js" />
       </list>
     </option>
   </component>
@@ -260,84 +324,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storytime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storytime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storytime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storytime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storytime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storytime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,12 +801,12 @@
       <workItem from="1488468183540" duration="8455000" />
       <workItem from="1488487694302" duration="7113000" />
       <workItem from="1488742884041" duration="10452000" />
-      <workItem from="1488810220389" duration="9260000" />
+      <workItem from="1488810220389" duration="33866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100879000" />
+    <option name="totallyTimeSpent" value="125485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
@@ -839,7 +825,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -874,28 +860,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Choice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ChoicesOfPathBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1144,14 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/rulesAndregulations.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/blog.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1168,22 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="94" column="47" lean-forward="true" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/getStarted.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/twistedtrail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
@@ -1192,36 +1132,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="127" column="69" lean-forward="false" selection-start-line="127" selection-start-column="69" selection-end-line="127" selection-end-column="69" />
+        <state relative-caret-position="213">
+          <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="22" selection-end-line="97" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/rulesAndregulations.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/getStarted.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="37" column="22" lean-forward="true" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/Hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HelloForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StoryProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="97" lean-forward="false" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
           <folding>
-            <marker date="1488821393601" expanded="true" signature="4739:5573" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="4803:5429" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="4803:5504" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="4803:5542" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:5765" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:5766" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:5917" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:5918" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:5967" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:6048" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:6068" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="5615:6069" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="6327:7244" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="6389:6940" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="6389:7213" ph="..." />
-            <marker date="1488821393601" expanded="true" signature="7589:7715" ph="..." />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/submitAstory.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/submitStory.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="86" column="28" lean-forward="false" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        <state relative-caret-position="210">
+          <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/twistedtrail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="161" column="25" lean-forward="false" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+          <folding>
+            <marker date="1488856165721" expanded="true" signature="4739:5573" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="4803:5429" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="4803:5504" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="4803:5542" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:5771" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:5772" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:6109" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:6110" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:6159" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:6204" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:6224" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="5615:6225" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="6483:7400" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="6545:7096" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="6545:7369" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="7533:7922" ph="..." />
+            <marker date="1488856165721" expanded="true" signature="8053:8122" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -37,8 +37,8 @@
                     <hr>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <a href="submitAstory.jsp"><img class="img-responsive" src="http://placehold.it/750x450" alt=""></a>
-                    <h3><a href="submitAstory.jsp">Submitting full stories<br />
+                    <a href="submitStory.jsp"><img class="img-responsive" src="http://placehold.it/750x450" alt=""></a>
+                    <h3><a href="submitStory.jsp">Submitting full stories<br />
                         <small>what you need to know</small></a>
                     </h3>
                 </div>

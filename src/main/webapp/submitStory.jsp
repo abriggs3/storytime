@@ -35,7 +35,10 @@
                 <h6 class="clickForAdditionalInformation_TopicHeader text-center"
                     id="getThingsToRememberInformation"
                     onclick="toggleExplanation(7)">Things to remember</h6>
-                <form>
+                <form name="submitStoryForm"
+                      action="processor"
+                      onsubmit="return validateForm()"
+                      method="POST">
                     <div class="form-group"> <!-- title field -->
                         <label class="control-label " for="storyTitle">Story Title</label>
                         <input class="form-control" id="storyTitle" name="storyTitle" type="text" maxlength="55"/>
@@ -53,7 +56,7 @@
                     <div class="form-group"> <!-- ageRating field -->
                         <label class="control-label requiredField" for="ageRating">Story is appropriate for ages over</label>
                         <input class="form-control" id="ageRating" name="ageRating" type="text" maxlength="2"
-                                placeholder="An age between 0 and 21 years. "/>
+                                placeholder="An age, 0 through 21."/>
                         <h6 class="clickForAdditionalInformation"
                             id="getRatingInformation"
                             onclick="toggleExplanation(3);">How the age rating works</h6>
@@ -85,25 +88,6 @@
                             <!-- javascript insertion point for getDropdown(2)-->
                         </div>
                     </label>
-
-
-
-
-
-                    <div class="dropdown">
-                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-                            <span class="caret"></span></button>
-                        <select class="dropdown-menu">
-                            <option class="dropdown-header">Dropdown header 1</option>
-                            <option><a href="#">HTML</a></option>
-                            <option><a href="#">CSS</a></option>
-                            <option><a href="#">JavaScript</a></option>
-                            <option class="divider"></option>
-                            <option class="dropdown-header">Dropdown header 2</option>
-                            <option><a href="#">About Us</a></option>
-                        </select>
-                    </div>
-
 
                     <hr>
 

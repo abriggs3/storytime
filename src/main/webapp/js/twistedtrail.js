@@ -108,9 +108,11 @@ function getDropdown(dropdownNumber) {
                            </select> \
                       </div> \
                       <div form-group"> \
-                           <label class="control-label requiredField" for="derivedFromDerivative">Original work story is derived from . . . </label> \
+                           <label class="control-label requiredField" for="derivedFromDerivative">Original work story is derived from . . . <br /></label> \
+                                Use the EXACT main title, including \'the\' when required i.e. <em>The</em> Vampire Diaries \
+                                Don\'t include subtitles. \
                            <input class="form-control col-lg-12" id="derivedFromDerivative" name="derivedFromDerivative" type="text" maxlength="255" \
-                                 placeholder="Exact title, including \'the\' when required i.e. The Vampire Diaries"/> \
+                                 placeholder="Exact title, up to 255 characters"/> \
                       </div>';
             break;
 
@@ -132,16 +134,77 @@ function getDropdown(dropdownNumber) {
                            </select> \
                       </div> \
                       <div form-group"> \
-                           <label class="control-label requiredField" for="derivedFromDerivative">Original work story is derived from . . . </label> \
-                           <input class="form-control col-lg-12" id="derivedFromDerivative" name="derivedFromDerivative" type="text" maxlength="255" \
-                                 placeholder="Use exact title. Include \'the\' when required i.e. \'The\' Vampire Diaries"/> \
+                           <label class="control-label requiredField" for="customGenre">Some stories don\'t \
+                                    fit easily into a common genre. If this applies to your story, pick the closest genre from \
+                                    dropdown menu and add a custom genre. Be brief, you have 55 characters. Remember, \
+                                    you still must select a common genre, even if you add your own custom one.</label> \
+                           <input class="form-control col-lg-12" id="customGenre" name="customGenre" type="text" maxlength="55" \
+                                 placeholder="Your custom genre."/> \
                       </div>';
             break;
         default : alert('a problem has occurred in the getDropdown function');
 
     }
-
     document.getElementById(storyContentDropdownLocation).innerHTML = content;
     document.getElementById(removeContentFromLocation).innerHTML = "";
 }
 
+function validateForm2() {
+
+
+    var derivativeDropdown = document.forms["submitStoryForm"]["derivativeDropdown"].value;
+    var derivedFromDerivative = document.forms["submitStoryForm"]["derivedFromDerivative"].value;
+    var originalDropdown = document.forms["submitStoryForm"]["originalDropdown"].value;
+    var customGenre = document.forms["submitStoryForm"]["customGenre"].value;
+
+}
+
+function validateForm() {
+    var storyTitle = (document.forms["submitStoryForm"]["storyTitle"].value).trim();
+    var storyShortDescription = document.forms["submitStoryForm"]["storyShortDescription"].value.trim();
+    var ageRating = document.forms["submitStoryForm"]["ageRating"].value.trim();
+
+    var story = document.forms["submitStoryForm"]["story"].value.trim();
+    var wordCount;
+
+    var formFieldArray = [storyTitle, storyShortDescription, ageRating, story];
+    var formFieldNameArray = ["Story Title", "One sentence summary", "Age Rating", "Story"];
+    var formFieldIdArray =  ["storyTitle", "storyShortDescription", "ageRating", "story"];
+
+    for (var index = 0; index < formFieldArray.length; index++) {
+        if (formFieldArray[index] === "") {
+            alert(formFieldNameArray[index] + " must be filled out");
+            document.getElementById(formFieldIdArray[index]).focus();
+            return false;
+        }
+    }
+
+    if (isNaN(ageRating)) {
+        alert("Age Rating must be a number");
+        document.getElementById("ageRating").focus();
+        return false;
+    }
+
+    if (ageRating < 0 || ageRating > 21) {
+        alert("Age Rating must be a number 0 through 21");
+        document.getElementById("ageRating").focus();
+        return false;
+    }
+
+    wordCount = countWords(story);
+
+//TODO active this when testing is done   if (wordCount < 500) {
+        if (wordCount < 5) {
+        alert("Your story must have at least 500 words");
+        document.getElementById("story").focus();
+        return false;
+    }
+
+
+}
+
+function countWords(story){
+    story = story.replace(/[ ]{2,}/gi," ");//2 or more space to 1
+    story = story.replace(/\n /,"\n"); // exclude newline with a start spacing
+    return story.split(' ').length;
+}
