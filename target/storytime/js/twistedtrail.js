@@ -160,16 +160,6 @@ function validateForm2() {
 }
 
 function validateForm() {
-alert("hello");
-
-
-
-
-
-
-
-
-
     var storyTitle = (document.forms["submitStoryForm"]["storyTitle"].value).trim();
     var storyShortDescription = document.forms["submitStoryForm"]["storyShortDescription"].value.trim();
     var ageRating = document.forms["submitStoryForm"]["ageRating"].value.trim();

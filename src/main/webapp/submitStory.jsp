@@ -38,7 +38,7 @@
                 <form name="submitStoryForm"
                       action="processor"
                       onsubmit="return validateForm()"
-                      method="POST">
+                      method="GET">
                     <div class="form-group"> <!-- title field -->
                         <label class="control-label " for="storyTitle">Story Title</label>
                         <input class="form-control" id="storyTitle" name="storyTitle" type="text" maxlength="55"/>

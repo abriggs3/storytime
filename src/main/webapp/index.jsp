@@ -1,3 +1,5 @@
+<%@include file="taglib.jsp"%>
+<c:set var="title" value="Index Page" />
 <%@include file="headerAndTopNavigation.jsp"%>
 
 <div class="container">
