@@ -62,7 +62,7 @@
                     <a href="index.jsp">Home</a>
                 </li>
                 <li>
-                    <a href="getStarted.jsp">Get Twisted</a>
+                    <a href="getTwisted.jsp">Get Twisted</a>
                 </li>
                 <li>
                     <a href="blog.jsp">Blog</a>

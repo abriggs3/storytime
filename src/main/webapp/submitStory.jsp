@@ -1,3 +1,5 @@
+<%@include file="taglib.jsp"%>
+<c:set var="title" value="Submit a Story" />
 <%@include file="headerAndTopNavigation.jsp"%>
 
 <div class="container">
@@ -17,7 +19,8 @@
             <div class="col-md-6">
                 <p>Put your creative skills to work.</p>
                 <p>Compose your complete story here or paste it from another source.</p>
-                <p>Go wild, give root to your dreams. Just remember, this is a community. Your submission must be YOURS,
+                <p>Go wild, give root to your dreams. Just remember, this is a friendly and supportive community.
+                    Your submission must be YOURS (don't be that <em>re-posting, non-crediting douche</em> everyone hates),
                     a complete story (don't leave readers hanging) and must follow the TwistedTrail
                     <a href="rulesAndregulations.jsp">rules and regulations</a>
                     to avoid being flagged and subsequently deleted.</p>
@@ -38,7 +41,7 @@
                 <form name="submitStoryForm"
                       action="processor"
                       onsubmit="return validateForm()"
-                      method="GET">
+                      method="POST">
                     <div class="form-group"> <!-- title field -->
                         <label class="control-label " for="storyTitle">Story Title</label>
                         <input class="form-control" id="storyTitle" name="storyTitle" type="text" maxlength="55"/>

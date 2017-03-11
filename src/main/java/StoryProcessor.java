@@ -21,6 +21,9 @@ public class StoryProcessor extends HttpServlet {
     public void  doPost(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
 
+        String fullSubmittedText = request.getParameter("story");
+        String[] storyParagraphs = fullSubmittedText.split("(?<=\\?\\r\\n\\r\\n)|(?<=\\.\r\\n\\r\\n)|(?<=!\\r\\n\\r\\n)");
+
         response.setContentType("text/HTML");
 
         PrintWriter out = response.getWriter();
@@ -32,28 +35,15 @@ public class StoryProcessor extends HttpServlet {
         out.println("<br />derived from title: " + request.getParameter("derivedFromDerivative"));
         out.println("<br />original dropdown: " + request.getParameter("originalDropdown"));
         out.println("<br />custom genre: " + request.getParameter("customGenre"));
-        out.println("<br />Story: " + request.getParameter("story"));
+       // out.println("<br />Story: " + request.getParameter("story"));
+        out.println("<br />The number of paragraphs is: " + storyParagraphs.length);
+        out.println("<br />Here are the paragraphs");
+
+        for (String paragraph : storyParagraphs) {
+            out.print("<br />");
+            out.println(paragraph);
+        }
+
         out.println("</h1></body></html>");
     }
-
-    public void  doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-
-        response.setContentType("text/HTML");
-        System.out.println("the story is" + request.getParameter("story") );
-        PrintWriter out = response.getWriter();
-        out.println("<html><body><h1>");
-        out.println("Story title: " + request.getParameter("storyTitle"));
-        out.println("<br />Story description: " + request.getParameter("storyShortDescription"));
-        out.println("<br />Story age rating: " + request.getParameter("ageRating"));
-        out.println("<br />derivative dropdown: " + request.getParameter("derivativeDropdown"));
-        out.println("<br />derived from title: " + request.getParameter("derivedFromDerivative"));
-        out.println("<br />original dropdown: " + request.getParameter("originalDropdown"));
-        out.println("<br />custom genre: " + request.getParameter("customGenre"));
-        out.println("<br />Story: " + request.getParameter("story"));
-        out.println("</h1></body></html>");
-    }
-
-
-
 }

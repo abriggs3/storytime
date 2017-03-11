@@ -62,11 +62,11 @@
                 <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
                 <hr class="visible-xs">
                 <p>We are fans of books and movies for a reason; we love to shove the blah-bland world
-                    of everyday to the back burner and step away into a world this is just a bit more
+                    of everyday to the back burner and step away into a world that is just a bit more
                     . . . interesting.</p>
                 <p>Books and movies are great, but deep down inside, a part of every one of us wants to get just a bit closer.
-                        A little part of us is always wishing, that our favorite character would have turned left, when
-                        they turned right. Yeah, you know what I am saying. Not to say that original author didn't
+                        A little part of us is always wishing that our favorite character would have turned left when
+                        they turned right. Yeah, you know what I am saying. Not to say that the original author didn't
                         get it quite right. It is just that, maybe, we would like to know what happened,
                         down the way, if that special left turn of our dreams would have come to pass.
                         And because that left turn, that little twist of fate, never happened, each of us

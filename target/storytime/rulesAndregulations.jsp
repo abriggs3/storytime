@@ -1,4 +1,7 @@
+<%@include file="taglib.jsp"%>
+<c:set var="title" value="Rules and Regulations" />
 <%@include file="headerAndTopNavigation.jsp"%>
+
 
 <div class="container">
 

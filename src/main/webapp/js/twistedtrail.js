@@ -40,7 +40,9 @@ function toggleExplanation(questionNumber) {
             topic = "explain this";
             explanation = 'A derivative story is derived from, or based on, someone else\'s work. By definition, all fan fiction is derivative. \
                 Since TwistedTrail happily accepts both original and derived content, knowing which is which \
-                helps us categorize your work so that it is easier for readers to find in our library.';
+                helps us categorize your work so that it is easier for readers to find in our library. Choosing \'derivative\' \
+                will produce a genre list. The genres in this list are specific to derivative literature an not related to \
+                the typical \'classical\' literary genres.';
             break;
 
         case 5 :
@@ -109,7 +111,7 @@ function getDropdown(dropdownNumber) {
                       </div> \
                       <div form-group"> \
                            <label class="control-label requiredField" for="derivedFromDerivative">Original work story is derived from . . . <br /></label> \
-                                Use the EXACT main title, including \'the\' when required i.e. <em>The</em> Vampire Diaries \
+                                Use the EXACT main title, including \'the\' when required i.e. <em>The</em> Vampire Diaries. \
                                 Don\'t include subtitles. \
                            <input class="form-control col-lg-12" id="derivedFromDerivative" name="derivedFromDerivative" type="text" maxlength="255" \
                                  placeholder="Exact title, up to 255 characters"/> \
@@ -122,10 +124,13 @@ function getDropdown(dropdownNumber) {
             content = '<div class="form-group selectpicker" data-style="btn-primary"> \
                            <select name="originalDropdown"> \
                                 <option value="noSelect">select a original genre</option> \
+                                <option value="action">action</option>\
+                                <option value="adventure">adventure</option>\
                                 <option value="comedy">comedy</option> \
                                 <option value="tragicomedy">tragic comedy</option> \
                                 <option value="drama">drama</option> \
                                 <option value="horror">horror</option> \
+                                <option value="mystery">mystery</option>\
                                 <option value="romance">romance</option> \
                                 <option value="romancecomedy">rom com</option> \
                                 <option value="realistic">realistic fiction</option> \
@@ -166,6 +171,7 @@ function validateForm() {
 
     var story = document.forms["submitStoryForm"]["story"].value.trim();
     var wordCount;
+    var paragraphCount;
 
     var formFieldArray = [storyTitle, storyShortDescription, ageRating, story];
     var formFieldNameArray = ["Story Title", "One sentence summary", "Age Rating", "Story"];
@@ -180,31 +186,40 @@ function validateForm() {
     }
 
     if (isNaN(ageRating)) {
-        alert("Age Rating must be a number");
+        alert("Age Rating must be a number.");
         document.getElementById("ageRating").focus();
         return false;
     }
 
     if (ageRating < 0 || ageRating > 21) {
-        alert("Age Rating must be a number 0 through 21");
+        alert("Age Rating must be a number 0 through 21.");
         document.getElementById("ageRating").focus();
         return false;
     }
 
-    wordCount = countWords(story);
-
-//TODO active this when testing is done   if (wordCount < 500) {
-        if (wordCount < 5) {
-        alert("Your story must have at least 500 words");
+    paragraphCount = countParagraphs(story);
+    if (paragraphCount < 5) {
+        alert("Your story must have at least five paragraphs. Each separated with a blank line.");
         document.getElementById("story").focus();
         return false;
     }
 
-
+    wordCount = countWords(story);
+//TODO activate this when testing is done:   if (wordCount < 500) {
+        if (wordCount < 5) {
+        alert("Your story must have at least 500 words.");
+        document.getElementById("story").focus();
+        return false;
+    }
 }
 
-function countWords(story){
-    story = story.replace(/[ ]{2,}/gi," ");//2 or more space to 1
-    story = story.replace(/\n /,"\n"); // exclude newline with a start spacing
+function  countParagraphs(story) {
+    return story.split(/\r?\n\r?\n/).length;
+}
+
+function countWords(story) {
+    story = story.replace(/[ ]{2,}/gi," ");
+    story = story.replace(/\n /,"\n");
     return story.split(' ').length;
 }
+
