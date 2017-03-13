@@ -197,16 +197,15 @@ function validateForm() {
         return false;
     }
 
-
     paragraphCount = countParagraphs(story);
     if (paragraphCount < 5) {
-        alert("Your story must have at least five paragraphs.");
+        alert("Your story must have at least five paragraphs. Each separated with a blank line.");
         document.getElementById("story").focus();
         return false;
     }
 
     wordCount = countWords(story);
-//TODO active this when testing is done   if (wordCount < 500) {
+//TODO activate this when testing is done:   if (wordCount < 500) {
         if (wordCount < 5) {
         alert("Your story must have at least 500 words.");
         document.getElementById("story").focus();
@@ -218,7 +217,7 @@ function  countParagraphs(story) {
     return story.split(/\r?\n\r?\n/).length;
 }
 
-function countWords(story){
+function countWords(story) {
     story = story.replace(/[ ]{2,}/gi," ");
     story = story.replace(/\n /,"\n");
     return story.split(' ').length;

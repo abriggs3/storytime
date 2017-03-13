@@ -17,12 +17,21 @@ import java.io.PrintWriter;
         urlPatterns = {"/story", "/processor"}
 )
 public class StoryProcessor extends HttpServlet {
+    DatabaseInsertProcessor databaseInsertProcessor;
 
     public void  doPost(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
 
+        databaseInsertProcessor = new DatabaseInsertProcessor();
+
         String fullSubmittedText = request.getParameter("story");
         String[] storyParagraphs = fullSubmittedText.split("(?<=\\?\\r\\n\\r\\n)|(?<=\\.\r\\n\\r\\n)|(?<=!\\r\\n\\r\\n)");
+
+        for (String contentOfParagraph : storyParagraphs) {
+            databaseInsertProcessor.insertData(contentOfParagraph);
+        }
+
+
 
         response.setContentType("text/HTML");
 
@@ -35,7 +44,7 @@ public class StoryProcessor extends HttpServlet {
         out.println("<br />derived from title: " + request.getParameter("derivedFromDerivative"));
         out.println("<br />original dropdown: " + request.getParameter("originalDropdown"));
         out.println("<br />custom genre: " + request.getParameter("customGenre"));
-       // out.println("<br />Story: " + request.getParameter("story"));
+
         out.println("<br />The number of paragraphs is: " + storyParagraphs.length);
         out.println("<br />Here are the paragraphs");
 
