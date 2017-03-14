@@ -6,6 +6,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="storytime" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/storytime/META-INF/MANIFEST.MF" />
