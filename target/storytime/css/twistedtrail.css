@@ -206,3 +206,13 @@ footer p {
     margin-bottom: 1em;
 }
 
+.btn-sm {
+    margin-bottom: 5px;
+}
+
+/* change buttons to full width on small screens */
+@media all and (max-width:480px) {
+    .custom-class {
+        width: 100%; display:block;
+    }
+}

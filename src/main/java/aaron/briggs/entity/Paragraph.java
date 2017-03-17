@@ -1,4 +1,4 @@
-package aaron.briggs.persistence;
+package aaron.briggs.entity;
 
 import java.security.Timestamp;
 

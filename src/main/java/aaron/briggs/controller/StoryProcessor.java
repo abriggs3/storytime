@@ -29,10 +29,7 @@ public class StoryProcessor extends HttpServlet {
 
         String fullSubmittedText = request.getParameter("story");
         String[] storyParagraphs = fullSubmittedText.split("(?<=\\?\\r\\n\\r\\n)|(?<=\\.\r\\n\\r\\n)|(?<=!\\r\\n\\r\\n)");
-
-        for (String contentOfParagraph : storyParagraphs) {
-           databaseInsertProcessor.insertData(contentOfParagraph);
-        }
+        databaseInsertProcessor.onCreationOfNewStoryInsertIntoDatabase(storyParagraphs);
 
 
 

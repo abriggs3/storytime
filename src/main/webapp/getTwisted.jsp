@@ -23,8 +23,8 @@
                             you a reading adventure where you control the choices the characters make.</p>
                     <p>Here, fate lies in your hands. Get started by reading from our ever growing library of user submitted titles or
                         jump right in and start creating your own interactive story.  TwistedTrail fully embraces fan fiction and
-                        totally original creations. So, whether you have a great idea all of your own or a new twist on something canon or
-                        classic go ahead and submit it; we would love to read it.</p>
+                        totally original creations. So, whether you have a great idea all of your own, or a new twist on something canon or
+                        classic, go ahead and submit it; we would love to read it.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>

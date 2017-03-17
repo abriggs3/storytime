@@ -1,4 +1,4 @@
-package aaron.briggs.persistence;
+package aaron.briggs.entity;
 
 /**
  * Created by aaronBriggs on 2/20/17.
