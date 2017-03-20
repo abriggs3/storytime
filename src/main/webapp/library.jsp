@@ -1,3 +1,5 @@
+<%@ page import="aaron.briggs.entity.Story"%>
+
 <%@include file="taglib.jsp"%>
 <c:set var="title" value="Library" />
 <%@include file="headerAndTopNavigation.jsp"%>
@@ -35,6 +37,14 @@
 
             <div id="newestStories" class="col-md-12">
                 <p>Top 10 Newest Stories</p>
+                <br />
+                <%! Story test = new Story();
+                    String testLine = test.testThisMethod();%>
+                    <h1><%= testLine  %></h1>
+
+
+
+                <br />
                 <table class="table table-hover">
                     <thead>
                     <tr>
@@ -51,7 +61,7 @@
                     <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Sample Title</td>
+                        <td>Current Time<%= new java.util.Date() %></td>
                         <td>Sample original author</td>
                         <td>Sample publish date</td>
                         <td>Sample quality rating</td>

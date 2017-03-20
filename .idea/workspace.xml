@@ -2,42 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db628242-b2d1-4eb8-b462-3a8cbea2767f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/Story.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/Choice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/ChoicesOfPathBundle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/Paragraph.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/Path.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/Story.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/Choice.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/ChoicesOfPathBundle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/Paragraph.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/Path.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/Story.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/User.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/Choice.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Choice.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/ChoicesOfPathBundle.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/ChoicesOfPathBundle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/Paragraph.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Paragraph.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/Path.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Path.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/User.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/controller/StoryProcessor.class" afterPath="$PROJECT_DIR$/target/classes/aaron/briggs/controller/StoryProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/DatabaseInsertProcessor.class" afterPath="$PROJECT_DIR$/target/classes/aaron/briggs/persistence/DatabaseInsertProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/entity/Story.class" afterPath="$PROJECT_DIR$/target/classes/aaron/briggs/entity/Story.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime.war" afterPath="$PROJECT_DIR$/target/storytime.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/controller/StoryProcessor.class" afterPath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/controller/StoryProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/DatabaseInsertProcessor.class" afterPath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/persistence/DatabaseInsertProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/entity/Story.class" afterPath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/entity/Story.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/twistedtrail.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/twistedtrail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/getTwisted.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/getTwisted.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/library.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/library.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storytime.iml" afterPath="$PROJECT_DIR$/storytime.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/css/twistedtrail.css" afterPath="$PROJECT_DIR$/target/storytime/css/twistedtrail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/getTwisted.jsp" afterPath="$PROJECT_DIR$/target/storytime/getTwisted.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/library.jsp" afterPath="$PROJECT_DIR$/target/storytime/library.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,7 +27,7 @@
       <file leaf-file-name="StoryProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="495">
               <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Story.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Story.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="402">
+              <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -101,7 +71,7 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-498">
+            <state relative-caret-position="-457">
               <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="library.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="library.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/library.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+            <state relative-caret-position="495">
+              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -171,9 +141,9 @@
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Choice.java" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/library.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" />
       </list>
     </option>
   </component>
@@ -904,12 +874,12 @@
       <workItem from="1489086838128" duration="350000" />
       <workItem from="1489087248646" duration="3571000" />
       <workItem from="1489258614544" duration="12812000" />
-      <workItem from="1489419876129" duration="58497000" />
+      <workItem from="1489419876129" duration="64366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75230000" />
+    <option name="totallyTimeSpent" value="81099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
@@ -1264,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Paragraph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1298,7 +1260,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="495">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1308,7 +1270,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-498">
+        <state relative-caret-position="-457">
           <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1318,8 +1280,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/library.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+        <state relative-caret-position="495">
+          <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
           <folding />
         </state>
       </provider>

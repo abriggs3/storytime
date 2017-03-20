@@ -1,3 +1,5 @@
+<%@ page import="aaron.briggs.entity.Story"%>
+
 <%@include file="taglib.jsp"%>
 <c:set var="title" value="Library" />
 <%@include file="headerAndTopNavigation.jsp"%>
@@ -24,7 +26,7 @@
                         thread of fate directly into your sweaty little hands. If the choices you find within any story fail to
                         suit your tastes, make your own. At TwistedTrail you are in control. Like a force from
                         a Greek tragedy you can twist the path that lies ahead of your favorite character on a whim. Here
-                        you are deus ex machina, the God from the Machine.</p>
+                    you are <em>deus ex machina</em>, the God from the Machine.</p>
                 <p id="selectionButtons">Read. Enjoy. Let your voice be heard.</p>
                 <a href="#newestStories" class="btn btn-default btn-sm custom-class">Newest Stories</a>
                 <a href="#highestRatedStories" class="btn btn-default btn-sm custom-class">Highest Rated Stories</a>
@@ -35,6 +37,14 @@
 
             <div id="newestStories" class="col-md-12">
                 <p>Top 10 Newest Stories</p>
+                <br />
+                <%! Story test = new Story();
+                    String testLine = test.testThisMethod();%>
+                    <h1><%= testLine  %></h1>
+
+
+
+                <br />
                 <table class="table table-hover">
                     <thead>
                     <tr>
@@ -51,7 +61,7 @@
                     <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Sample Title</td>
+                        <td>Current Time<%= new java.util.Date() %></td>
                         <td>Sample original author</td>
                         <td>Sample publish date</td>
                         <td>Sample quality rating</td>
