@@ -21,7 +21,6 @@ public class DatabaseInsertProcessor {
                 sql = "INSERT INTO paragraph (paragraphContent)" +
                         " VALUES (?)";
                 PreparedStatement preparedStatement = connection.prepareStatement(sql);
-     //           preparedStatement.setString(1, contentOfParagraph);
                 preparedStatement.setString(1, contentOfParagraph);
 
                 preparedStatement.executeUpdate();

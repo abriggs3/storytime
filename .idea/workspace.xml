@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db628242-b2d1-4eb8-b462-3a8cbea2767f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/aaron/briggs/entity/Story.class" afterPath="$PROJECT_DIR$/target/classes/aaron/briggs/entity/Story.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime.war" afterPath="$PROJECT_DIR$/target/storytime.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/entity/Story.class" afterPath="$PROJECT_DIR$/target/storytime/WEB-INF/classes/aaron/briggs/entity/Story.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/library.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/library.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/storytime/library.jsp" afterPath="$PROJECT_DIR$/target/storytime/library.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +24,7 @@
       <file leaf-file-name="StoryProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="450">
               <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,21 +46,34 @@
       <file leaf-file-name="DatabaseInsertProcessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <marker date="1489623203061" expanded="true" signature="538:618" ph="INSERT INTO paragraph... " />
+                <marker date="1490019921859" expanded="true" signature="538:618" ph="INSERT INTO paragraph... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Story.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Story.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+            <state relative-caret-position="780">
+              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DatabaseSelectProcessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#552#559#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="library.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="library.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/library.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+            <state relative-caret-position="225">
+              <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -128,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/submitStory.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/Database.java" />
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/getTwisted.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/twistedtrail.css" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/StorySubmitDataCollection.java" />
@@ -139,11 +148,12 @@
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Paragraph.java" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/ChoicesOfPathBundle.java" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Choice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/library.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/library.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java" />
       </list>
     </option>
   </component>
@@ -874,12 +884,12 @@
       <workItem from="1489086838128" duration="350000" />
       <workItem from="1489087248646" duration="3571000" />
       <workItem from="1489258614544" duration="12812000" />
-      <workItem from="1489419876129" duration="64366000" />
+      <workItem from="1489419876129" duration="67953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81099000" />
+    <option name="totallyTimeSpent" value="84686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
@@ -1184,29 +1194,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/StorySubmitDataCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1489623203061" expanded="true" signature="538:618" ph="INSERT INTO paragraph... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,16 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-457">
@@ -1278,18 +1260,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/library.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/controller/StoryProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/entity/Story.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="83" column="25" lean-forward="true" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+        <state relative-caret-position="780">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseInsertProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1490019921859" expanded="true" signature="538:618" ph="INSERT INTO paragraph... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/aaron/briggs/persistence/DatabaseSelectProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#559#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/library.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="42" column="45" lean-forward="true" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
           <folding />
         </state>
       </provider>

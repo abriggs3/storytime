@@ -1,4 +1,4 @@
-<%@ page import="aaron.briggs.entity.Story"%>
+<%@ page import="aaron.briggs.persistence.DatabaseSelectProcessor"%>
 
 <%@include file="taglib.jsp"%>
 <c:set var="title" value="Library" />
@@ -38,7 +38,7 @@
             <div id="newestStories" class="col-md-12">
                 <p>Top 10 Newest Stories</p>
                 <br />
-                <%! Story test = new Story();
+                <%! DatabaseSelectProcessor test = new DatabaseSelectProcessor();
                     String testLine = test.testThisMethod();%>
                     <h1><%= testLine  %></h1>
 

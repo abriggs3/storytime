@@ -79,15 +79,5 @@ public class Story {
 
 
 
-    public String testThisMethod() {
-        String test = "<li>TESTING!!!</li>";
-        String list = "";
-
-        for (int counter = 0; counter < 10 ; counter++) {
-            list += test;
-        }
-        String printThis = "<ul>" + list + "</ul>";
-        return printThis;
-    }
 
 }
