@@ -1,4 +1,7 @@
 <%@ page import="aaron.briggs.persistence.DatabaseSelectProcessor"%>
+<%@ page import="aaron.briggs.entity.Story" %>
+<%@ page import="java.util.List" %>
+
 
 <%@include file="taglib.jsp"%>
 <c:set var="title" value="Library" />
@@ -38,164 +41,46 @@
             <div id="newestStories" class="col-md-12">
                 <p>Top 10 Newest Stories</p>
                 <br />
-                <%! DatabaseSelectProcessor test = new DatabaseSelectProcessor();
-                    String testLine = test.testThisMethod();%>
-                    <h1><%= testLine  %></h1>
+                <ol>
+                    <%! DatabaseSelectProcessor newestStories = new DatabaseSelectProcessor();
+                        List<Story> newestStoryArrayList = newestStories.findAllStoriesByPublishedDate();%>
+                    <%  for (Story storyItem : newestStoryArrayList) {%>
+                    <li><span class="boldTitle"><%= storyItem.getStoryTitle()%></span>
+                            Author: <%= storyItem.getUserId()%>
+                            Date published: <%=storyItem.getStoryDatePublished()%></li>
 
-
-
-                <br />
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Title</th>
-                        <th>Original author</th>
-                        <th>Published</th>
-                        <th>Content quality</th>
-                        <th>Content type</th>
-                        <th>Content genre</th>
-                        <th>Content Basis or custom genre</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Current Time<%= new java.util.Date() %></td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <%}%>
+                </ol>
                 <a href="#selectionButtons" class="btn btn-default btn-sm custom-class">return to top</a>
             </div>
 
             <div id="highestRatedStories" class="col-md-12">
                 <p>Top 10 Highest Rated Stories</p>
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Title</th>
-                        <th>Original author</th>
-                        <th>Published</th>
-                        <th>Content quality</th>
-                        <th>Content type</th>
-                        <th>Content genre</th>
-                        <th>Content Basis or custom genre</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
+                <ol>
+                    <%! DatabaseSelectProcessor highestRatedStories = new DatabaseSelectProcessor();
+                        List<Story> highestRatedStoriesArrayList = highestRatedStories.findAllStoriesByHighestRated();%>
+                    <%  for (Story storyItem : highestRatedStoriesArrayList) {%>
+                    <li><span class="boldTitle"><%= storyItem.getStoryTitle()%></span>
+                        Author: <%= storyItem.getUserId()%>
+                        Date published: <%=storyItem.getStoryDatePublished()%></li>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <%}%>
+                </ol>
                 <a href="#selectionButtons" class="btn btn-default btn-sm custom-class">return to top</a>
             </div>
 
             <div id="mostTwistedStories" class="col-md-12">
                 <p>Top 10 Most Twisted Stories</p>
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Title</th>
-                        <th>Original author</th>
-                        <th>Published</th>
-                        <th>Content quality</th>
-                        <th>Content type</th>
-                        <th>Content genre</th>
-                        <th>Content Basis or custom genre</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
+                <ol>
+                    <%! DatabaseSelectProcessor mostTwistedStories = new DatabaseSelectProcessor();
+                        List<Story> mostTwistedStoriesArrayList = mostTwistedStories.findAllStoriesByMostTwisted();%>
+                    <%  for (Story storyItem : mostTwistedStoriesArrayList) {%>
+                    <li><span class="boldTitle"><%= storyItem.getStoryTitle()%></span>
+                        Author: <%= storyItem.getUserId()%>
+                        Date published: <%=storyItem.getStoryDatePublished()%></li>
 
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Sample Title</td>
-                        <td>Sample original author</td>
-                        <td>Sample publish date</td>
-                        <td>Sample quality rating</td>
-                        <td>Sample content type</td>
-                        <td>sample genre</td>
-                        <td>sample basis</td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <%}%>
+                </ol>
                 <a href="#selectionButtons" class="btn btn-default btn-sm custom-class">return to top</a>
             </div>
         </div>

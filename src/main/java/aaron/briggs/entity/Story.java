@@ -10,12 +10,14 @@ public class Story {
     private String storyTitle;
     private int storyRating;
     private int storyNumberOfRatings;
-    private int storyContentRating;
-    private int storyNumberOfContentRatings;
+    private int storyAgeRating;
+    private int storyNumberOfAgeRatings;
     private int userId;
     private LocalDate storyDatePublished;
 
-    public int getStoryId() { return storyId; }
+    public int getStoryId() {
+        return storyId;
+    }
 
     public void setStoryId(int storyId) {
         this.storyId = storyId;
@@ -45,20 +47,20 @@ public class Story {
         this.storyNumberOfRatings = storyNumberOfRatings;
     }
 
-    public int getStoryContentRating() {
-        return storyContentRating;
+    public int getStoryAgeRating() {
+        return storyAgeRating;
     }
 
-    public void setStoryContentRating(int storyContentRating) {
-        this.storyContentRating = storyContentRating;
+    public void setStoryAgeRating(int storyAgeRating) {
+        this.storyAgeRating = storyAgeRating;
     }
 
-    public int getStoryNumberOfContentRatings() {
-        return storyNumberOfContentRatings;
+    public int getStoryNumberOfAgeRatings() {
+        return storyNumberOfAgeRatings;
     }
 
-    public void setStoryNumberOfContentRatings(int storyNumberOfContentRatings) {
-        this.storyNumberOfContentRatings = storyNumberOfContentRatings;
+    public void setStoryNumberOfAgeRatings(int storyNumberOfAgeRatings) {
+        this.storyNumberOfAgeRatings = storyNumberOfAgeRatings;
     }
 
     public int getUserId() {
@@ -76,8 +78,4 @@ public class Story {
     public void setStoryDatePublished(LocalDate storyDatePublished) {
         this.storyDatePublished = storyDatePublished;
     }
-
-
-
-
 }

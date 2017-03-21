@@ -216,3 +216,8 @@ footer p {
         width: 100%; display:block;
     }
 }
+
+/* add bold to titles */
+.boldTitle {
+    font-weight: bold;
+}
