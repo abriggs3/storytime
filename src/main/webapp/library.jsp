@@ -38,47 +38,74 @@
             </div>
 
 
-            <div id="newestStories" class="col-md-12">
-                <p>Top 10 Newest Stories</p>
-                <br />
+            <div id="newestStories" class="col-lg-4">
+                <%!int limitValue = 5;%>
+                <p>Top <%=limitValue%> Newest Stories </p>
                 <ol>
                     <%! DatabaseSelectProcessor newestStories = new DatabaseSelectProcessor();
-                        List<Story> newestStoryArrayList = newestStories.findAllStoriesByPublishedDate();%>
+                        List<Story> newestStoryArrayList = newestStories.findAllStoriesByPublishedDate(limitValue);%>
                     <%  for (Story storyItem : newestStoryArrayList) {%>
-                    <li><span class="boldTitle"><%= storyItem.getStoryTitle()%></span>
-                            Author: <%= storyItem.getUserId()%>
-                            Date published: <%=storyItem.getStoryDatePublished()%></li>
-
+                    <li><h5><a class="boldTitle" href="#"><%= storyItem.getStoryTitle()%></a></h5>
+                            <p class="listItemDetails">
+                                Date published: <%=storyItem.getStoryDatePublished()%><br />
+                                Number of Paths: <%=storyItem.getStoryNumberOfPaths()%><br />
+                                Author: <%= storyItem.getUserId()%><br />
+                                Appropriate for ages: <%=storyItem.getStoryAgeRating()%>  and up. Number of ratings: <%=storyItem.getStoryNumberOfAgeRatings()%><br />
+                                Content rating: <%=storyItem.getStoryRating()%> Number of ratings: <%=storyItem.getStoryNumberOfRatings()%><br />
+                                Story type: <%=storyItem.getStoryType()%><br />
+                                Genre: <%=storyItem.getStoryGenre()%><br />
+                                Based on / Custom genre: <%=storyItem.getStoryBasedOnGenre()%><br />
+                                Summary: <%=storyItem.getStorySummary()%><br />
+                            </p>
+                    </li>
                     <%}%>
                 </ol>
                 <a href="#selectionButtons" class="btn btn-default btn-sm custom-class">return to top</a>
             </div>
 
-            <div id="highestRatedStories" class="col-md-12">
-                <p>Top 10 Highest Rated Stories</p>
+            <div id="highestRatedStories" class="col-lg-4">
+                <p>Top <%=limitValue%> Highest Rated Stories </p>
                 <ol>
                     <%! DatabaseSelectProcessor highestRatedStories = new DatabaseSelectProcessor();
-                        List<Story> highestRatedStoriesArrayList = highestRatedStories.findAllStoriesByHighestRated();%>
+                        List<Story> highestRatedStoriesArrayList = highestRatedStories.findAllStoriesByHighestRated(limitValue);%>
                     <%  for (Story storyItem : highestRatedStoriesArrayList) {%>
-                    <li><span class="boldTitle"><%= storyItem.getStoryTitle()%></span>
-                        Author: <%= storyItem.getUserId()%>
-                        Date published: <%=storyItem.getStoryDatePublished()%></li>
-
+                    <li><h5><a class="boldTitle" href="#"><%= storyItem.getStoryTitle()%></a></h5>
+                        <p class="listItemDetails">
+                            Content rating: <%=storyItem.getStoryRating()%> Number of ratings: <%=storyItem.getStoryNumberOfRatings()%><br />
+                            Date published: <%=storyItem.getStoryDatePublished()%><br />
+                            Number of Paths: <%=storyItem.getStoryNumberOfPaths()%><br />
+                            Author: <%= storyItem.getUserId()%><br />
+                            Appropriate for ages: <%=storyItem.getStoryAgeRating()%>  and up. Number of ratings: <%=storyItem.getStoryNumberOfAgeRatings()%><br />
+                            Story type: <%=storyItem.getStoryType()%><br />
+                            Genre: <%=storyItem.getStoryGenre()%><br />
+                            Based on / Custom genre: <%=storyItem.getStoryBasedOnGenre()%><br />
+                            Summary: <%=storyItem.getStorySummary()%><br />
+                        </p>
+                    </li>
                     <%}%>
                 </ol>
                 <a href="#selectionButtons" class="btn btn-default btn-sm custom-class">return to top</a>
             </div>
 
-            <div id="mostTwistedStories" class="col-md-12">
-                <p>Top 10 Most Twisted Stories</p>
+            <div id="mostTwistedStories" class="col-lg-4">
+                <p>Top <%=limitValue%> Most Twisted Stories </p>
                 <ol>
                     <%! DatabaseSelectProcessor mostTwistedStories = new DatabaseSelectProcessor();
-                        List<Story> mostTwistedStoriesArrayList = mostTwistedStories.findAllStoriesByMostTwisted();%>
+                        List<Story> mostTwistedStoriesArrayList = mostTwistedStories.findAllStoriesByMostTwisted(limitValue);%>
                     <%  for (Story storyItem : mostTwistedStoriesArrayList) {%>
-                    <li><span class="boldTitle"><%= storyItem.getStoryTitle()%></span>
-                        Author: <%= storyItem.getUserId()%>
-                        Date published: <%=storyItem.getStoryDatePublished()%></li>
-
+                    <li><h5><a class="boldTitle" href="#"><%= storyItem.getStoryTitle()%></a></h5>
+                        <p class="listItemDetails">
+                            Number of Paths: <%=storyItem.getStoryNumberOfPaths()%><br />
+                            Date published: <%=storyItem.getStoryDatePublished()%><br />
+                            Author: <%= storyItem.getUserId()%><br />
+                            Appropriate for ages: <%=storyItem.getStoryAgeRating()%>  and up. Number of ratings: <%=storyItem.getStoryNumberOfAgeRatings()%><br />
+                            Content rating: <%=storyItem.getStoryRating()%> Number of ratings: <%=storyItem.getStoryNumberOfRatings()%><br />
+                            Story type: <%=storyItem.getStoryType()%><br />
+                            Genre: <%=storyItem.getStoryGenre()%><br />
+                            Based on / Custom genre: <%=storyItem.getStoryBasedOnGenre()%><br />
+                            Summary: <%=storyItem.getStorySummary()%><br />
+                        </p>
+                    </li>
                     <%}%>
                 </ol>
                 <a href="#selectionButtons" class="btn btn-default btn-sm custom-class">return to top</a>

@@ -221,3 +221,15 @@ footer p {
 .boldTitle {
     font-weight: bold;
 }
+
+/* format list item */
+.listItemDetails {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 85%;
+}
+
+/* reduces font size of list item details */
+.listItemDetailsIndexPage {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 65%;
+}

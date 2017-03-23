@@ -14,6 +14,11 @@ public class Story {
     private int storyNumberOfAgeRatings;
     private int userId;
     private LocalDate storyDatePublished;
+    private int storyNumberOfPaths;
+    private String storyType;
+    private String storyGenre;
+    private String storyBasedOnGenre;
+    private String storySummary;
 
     public int getStoryId() {
         return storyId;
@@ -77,5 +82,45 @@ public class Story {
 
     public void setStoryDatePublished(LocalDate storyDatePublished) {
         this.storyDatePublished = storyDatePublished;
+    }
+
+    public int getStoryNumberOfPaths() {
+        return storyNumberOfPaths;
+    }
+
+    public void setStoryNumberOfPaths(int storyNumberOfPaths) {
+        this.storyNumberOfPaths = storyNumberOfPaths;
+    }
+
+    public String getStoryType() {
+        return storyType;
+    }
+
+    public void setStoryType(String storyType) {
+        this.storyType = storyType;
+    }
+
+    public String getStoryGenre() {
+        return storyGenre;
+    }
+
+    public void setStoryGenre(String storyGenre) {
+        this.storyGenre = storyGenre;
+    }
+
+    public String getStoryBasedOnGenre() {
+        return storyBasedOnGenre;
+    }
+
+    public void setStoryBasedOnGenre(String storyBasedOnGenre) {
+        this.storyBasedOnGenre = storyBasedOnGenre;
+    }
+
+    public String getStorySummary() {
+        return storySummary;
+    }
+
+    public void setStorySummary(String storySummary) {
+        this.storySummary = storySummary;
     }
 }

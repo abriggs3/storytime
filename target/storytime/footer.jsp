@@ -1,8 +1,10 @@
 <footer>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <p>Copyright &copy; TwistedTrail 2017</p>
+                <p>Copyright &copy; TwistedTrail 2017
+                <a href="#" class="btn btn-default btn-sm custom-class btn-block">return to top</a></p>
             </div>
         </div>
     </div>

@@ -1,3 +1,6 @@
+<%@ page import="aaron.briggs.entity.Story" %>
+<%@ page import="java.util.List" %>
+<%@ page import="aaron.briggs.persistence.DatabaseSelectProcessor" %>
 <%@include file="taglib.jsp"%>
 <c:set var="title" value="Index Page" />
 <%@include file="headerAndTopNavigation.jsp"%>
@@ -85,28 +88,53 @@
                     <strong>newest, highest rated and most twisted content</strong>
                 </h2>
                 <hr>
-                <p>Newest contributions</p>
-                <ul>
-                    <li>TODO__title date and what is new the story or the twist</li>
-                    <li>TODO__title date and what is new the story or the twist</li>
-                    <li>TODO__title date and what is new the story or the twist</li>
-                </ul>
-                <p>Highest rated</p>
-                <ul>
-                    <li>TODO__title rating</li>
-                    <li>TODO__title rating</li>
-                    <li>TODO__title rating</li>
-                </ul>
-                <p>Most twisted</p>
-                <ul>
-                    <li>TODO__title total twists</li>
-                    <li>TODO__title total twists</li>
-                    <li>TODO__title total twists</li>
-                </ul>
+                <div id="newestStories" class="col-lg-4">
+                    <%!int limitValue = 10;%>
+                    <p>Top <%=limitValue%> Newest Stories</p>
+                    <ol>
+                        <%! DatabaseSelectProcessor newestStories = new DatabaseSelectProcessor();
+                            List<Story> newestStoryArrayList = newestStories.findAllStoriesByPublishedDate(limitValue);%>
+                        <%  for (Story storyItem : newestStoryArrayList) {%>
+                        <li><h4><a class="boldTitle" href="#"><%= storyItem.getStoryTitle()%></a>
+                            <br />
+                            <span class="listItemDetailsIndexPage">Date published: <%=storyItem.getStoryDatePublished()%></span></h4>
+                        </li>
+                        <%}%>
+                    </ol>
+                </div>
+
+                <div id="highestRatedStories" class="col-lg-4">
+                    <p>Top <%=limitValue%> Highest Rated Stories</p>
+                    <ol>
+                        <%! DatabaseSelectProcessor highestRatedStories = new DatabaseSelectProcessor();
+                            List<Story> highestRatedStoriesArrayList = highestRatedStories.findAllStoriesByHighestRated(limitValue);%>
+                        <%  for (Story storyItem : highestRatedStoriesArrayList) {%>
+                        <li><h4><a class="boldTitle" href="#"><%= storyItem.getStoryTitle()%></a>
+                            <br />
+                            <span class="listItemDetailsIndexPage">Content rating: <%=storyItem.getStoryRating()%>
+                                    <br />
+                                    Number of ratings: <%=storyItem.getStoryNumberOfRatings()%></span></h4>
+                        </li>
+                        <%}%>
+                    </ol>
+                </div>
+
+                <div id="mostTwistedStories" class="col-lg-4">
+                    <p>Top <%=limitValue%> Most Twisted Stories</p>
+                    <ol>
+                        <%! DatabaseSelectProcessor mostTwistedStories = new DatabaseSelectProcessor();
+                            List<Story> mostTwistedStoriesArrayList = mostTwistedStories.findAllStoriesByMostTwisted(limitValue);%>
+                        <%  for (Story storyItem : mostTwistedStoriesArrayList) {%>
+                        <li><h4><a class="boldTitle" href="#"><%= storyItem.getStoryTitle()%></a>
+                            <br />
+                            <span class="listItemDetailsIndexPage">Number of Paths: <%=storyItem.getStoryNumberOfPaths()%></span></h4>
+                        </li>
+                        <%}%>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
-
 </div>
 <!-- /.container -->
 

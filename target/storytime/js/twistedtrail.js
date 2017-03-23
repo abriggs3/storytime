@@ -205,8 +205,7 @@ function validateForm() {
     }
 
     wordCount = countWords(story);
-//TODO activate this when testing is done:   if (wordCount < 500) {
-        if (wordCount < 5) {
+    if (wordCount < 500) {
         alert("Your story must have at least 500 words.");
         document.getElementById("story").focus();
         return false;
