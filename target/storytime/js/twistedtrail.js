@@ -97,7 +97,7 @@ function getDropdown(dropdownNumber) {
             storyContentDropdownLocation = "storyContentDropdown1";
             removeContentFromLocation = "storyContentDropdown2"
             content = '<div class="form-group selectpicker" data-style="btn-primary"> \
-                           <select name="derivativeDropdown"> \
+                           <select name="typeDropdown"> \
                                 <option value="noSelect">select a derivative genre</option> \
                                 <option value="adventure">adventure</option> \
                                 <option value="hurt">hurt/comfort</option> \
@@ -113,7 +113,7 @@ function getDropdown(dropdownNumber) {
                            <label class="control-label requiredField" for="derivedFromDerivative">Original work story is derived from . . . <br /></label> \
                                 Use the EXACT main title, including \'the\' when required i.e. <em>The</em> Vampire Diaries. \
                                 Don\'t include subtitles. \
-                           <input class="form-control col-lg-12" id="derivedFromDerivative" name="derivedFromDerivative" type="text" maxlength="255" \
+                           <input class="form-control col-lg-12" id="derivedFromDerivative" name="basedOnCustomGenre" type="text" maxlength="255" \
                                  placeholder="Exact title, up to 255 characters"/> \
                       </div>';
             break;
@@ -122,7 +122,7 @@ function getDropdown(dropdownNumber) {
             storyContentDropdownLocation = "storyContentDropdown2";
             removeContentFromLocation = "storyContentDropdown1";
             content = '<div class="form-group selectpicker" data-style="btn-primary"> \
-                           <select name="originalDropdown"> \
+                           <select name="typeDropdown"> \
                                 <option value="noSelect">select a original genre</option> \
                                 <option value="action">action</option>\
                                 <option value="adventure">adventure</option>\
@@ -143,7 +143,7 @@ function getDropdown(dropdownNumber) {
                                     fit easily into a common genre. If this applies to your story, pick the closest genre from \
                                     dropdown menu and add a custom genre. Be brief, you have 55 characters. Remember, \
                                     you still must select a common genre, even if you add your own custom one.</label> \
-                           <input class="form-control col-lg-12" id="customGenre" name="customGenre" type="text" maxlength="55" \
+                           <input class="form-control col-lg-12" id="customGenre" name="basedOnCustomGenre" type="text" maxlength="55" \
                                  placeholder="Your custom genre."/> \
                       </div>';
             break;
@@ -205,7 +205,8 @@ function validateForm() {
     }
 
     wordCount = countWords(story);
-    if (wordCount < 500) {
+//TODO activate this when testing is done:   if (wordCount < 500) {
+        if (wordCount < 5) {
         alert("Your story must have at least 500 words.");
         document.getElementById("story").focus();
         return false;

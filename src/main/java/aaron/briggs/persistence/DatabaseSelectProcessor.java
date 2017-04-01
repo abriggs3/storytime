@@ -42,6 +42,8 @@ public class DatabaseSelectProcessor {
 
 
 
+
+
     private List<Story> executeQuery(String sql) {
 
         List<Story> storyArrayList = new ArrayList<Story>();
@@ -55,7 +57,8 @@ public class DatabaseSelectProcessor {
             runWhileLoop(storyArrayList, results);
             database.disconnect();
         } catch (SQLException e) {
-            System.out.println("There has been an SQL error in the executeQuery method of the Story class.");
+            System.out.println("There has been an SQL error in the executeQuery method of the DataSelectProcessor class." +
+                    "This error is caused when an attempt to run a select statement on the 'story' table has failed.");
 
 
         } catch (Exception e) {
@@ -90,5 +93,4 @@ public class DatabaseSelectProcessor {
         story.setStorySummary(results.getString("summary"));
         return story;
     }
-
 }

@@ -42,6 +42,7 @@
                       action="processor"
                       onsubmit="return validateForm()"
                       method="POST">
+                    <input type="hidden" name="formName" value="storySubmitInsert"> <!-- name of the form, needed for processing -->
                     <div class="form-group"> <!-- title field -->
                         <label class="control-label " for="storyTitle">Story Title</label>
                         <input class="form-control" id="storyTitle" name="storyTitle" type="text" maxlength="55"/>
@@ -68,8 +69,10 @@
                     <div class=".btn-group-vertical" > <!-- original or derivative buttons -->
 
                             <label class="btn btn-primary intro-text">
-                                <input type="button"
+                                <input type="radio"
                                        id="getDropdownDerivative"
+                                       name="contentType"
+                                       value="derivative"
                                        onclick="getDropdown(1)"> derivative
                             </label>
                             <h6 class="clickForAdditionalInformation"
@@ -79,8 +82,10 @@
                                 <!-- javascript insertion point for getDropdown(1)-->
                             </div>
                             <label class="btn btn-primary intro-text">
-                                <input type="button"
+                                <input type="radio"
                                        id="getDropdownOriginal"
+                                       name="contentType"
+                                       value="original"
                                        onclick="getDropdown(2)"> original
                             </label>
                             <h6 class="clickForAdditionalInformation"
