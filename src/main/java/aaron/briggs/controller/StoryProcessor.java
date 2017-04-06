@@ -10,6 +10,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -30,6 +32,7 @@ public class StoryProcessor extends HttpServlet {
     private Paragraph paragraph;
     private String nameOfForm;
     private ArrayList<Paragraph> paragraphArrayList;
+    private String resultOfInsertAttempt;
 
     public void  doPost(HttpServletRequest request, HttpServletResponse response)
         throws ServletException, IOException {
@@ -59,14 +62,25 @@ public class StoryProcessor extends HttpServlet {
             paragraph = new Paragraph();
             paragraph.setParagraphContent(contentOfParagraph);
 
-
             paragraphArrayList.add(paragraph);
         }
 
 
 
-        databaseInsertProcessor.onCreationOfNewStoryInsertIntoDatabase(nameOfForm, storyParagraphs, story);
+        resultOfInsertAttempt = databaseInsertProcessor.onCreationOfNewStoryInsertIntoDatabase(nameOfForm, storyParagraphs, story);
 
+        switch (resultOfInsertAttempt) {
+            case "fail_titleMatchInDatabase" :
+                displayToUserCauseOfFailureTitleMatch();
+                break;
+            case "successful_insert" :
+                displayToUserSuccessOfInsert();
+                break;
+            default :
+                System.out.println("The switch statement that reports the results of insert has failed. Bummer.");
+
+        }
+System.out.println(resultOfInsertAttempt);
 
 
         response.setContentType("text/HTML");
@@ -90,5 +104,16 @@ public class StoryProcessor extends HttpServlet {
         }
 
         out.println("</h1></body></html>");
+    }
+
+    private void displayToUserCauseOfFailureTitleMatch() {
+        Component frame = null;
+        JOptionPane.showMessageDialog(frame, "Unfortunately, the title you created IS already use :(. " +
+                "Your title must be unique; please create another title.");
+    }
+
+    private void displayToUserSuccessOfInsert() {
+        Component frame = null;
+        JOptionPane.showMessageDialog(frame, "Congratulations! Your story has been successfully added to the TwistedTrail library");
     }
 }
