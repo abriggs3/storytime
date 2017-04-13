@@ -233,3 +233,7 @@ footer p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 65%;
 }
+
+.importantMessage {
+    color: orange;
+}

@@ -5,6 +5,7 @@ import aaron.briggs.entity.Story;
 import aaron.briggs.entity.User;
 import aaron.briggs.persistence.*;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -71,49 +72,51 @@ public class StoryProcessor extends HttpServlet {
 
         switch (resultOfInsertAttempt) {
             case "fail_titleMatchInDatabase" :
-                displayToUserCauseOfFailureTitleMatch();
+                displayToUserCauseOfFailureTitleMatch(request, response);
                 break;
             case "successful_insert" :
-                displayToUserSuccessOfInsert();
+                displayToUserSuccessOfInsert(request, response);
                 break;
             default :
                 System.out.println("The switch statement that reports the results of insert has failed. Bummer.");
 
         }
-System.out.println(resultOfInsertAttempt);
+    }
 
 
-        response.setContentType("text/HTML");
-
-        PrintWriter out = response.getWriter();
-        out.println("<html><body><h1>");
-        out.println("Story title: " + request.getParameter("storyTitle"));
-        out.println("<br />Story description: " + request.getParameter("storyShortDescription"));
-        out.println("<br />Story age rating: " + request.getParameter("ageRating"));
-        out.println("<br />Story type: " + request.getParameter("contentType"));
-        out.println("<br />Story genre: " + request.getParameter("typeDropdown"));
-        out.println("<br />Story based on or custom genre: " + request.getParameter("basedOnCustomGenre"));
-        out.println("<br />name of form " + request.getParameter("formName"));
-
-        out.println("<br />The number of paragraphs is: " + storyParagraphs.length);
-        out.println("<br />Here are the paragraphs");
-
-        for (String paragraph : storyParagraphs) {
-            out.print("<br />");
-            out.println(paragraph);
+    private void displayToUserCauseOfFailureTitleMatch(HttpServletRequest request, HttpServletResponse response) {
+        request.setAttribute("resultTitle_1", "Bummer");
+        request.setAttribute("resultTitle_2", "We have a problem");
+        request.setAttribute("resultMessage", "Your story title, <em>" + request.getParameter("storyTitle")
+                + "</em>, is already in the TwistedTrail library.<br />"
+                + "All titles must be unique.");
+        request.setAttribute("linkMessage", "<a href=\"/submitStory.jsp\">Let me fix it!</a>");
+//TODO    change submitStory.jsp to a servlet that can repopulate the form
+        String url = "/submitResultsPage.jsp";
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException exception) {
+            exception.printStackTrace();
+        } catch (IOException exception) {
+            exception.printStackTrace();
         }
-
-        out.println("</h1></body></html>");
     }
 
-    private void displayToUserCauseOfFailureTitleMatch() {
-        Component frame = null;
-        JOptionPane.showMessageDialog(frame, "Unfortunately, the title you created IS already use :(. " +
-                "Your title must be unique; please create another title.");
-    }
-
-    private void displayToUserSuccessOfInsert() {
-        Component frame = null;
-        JOptionPane.showMessageDialog(frame, "Congratulations! Your story has been successfully added to the TwistedTrail library");
+    private void displayToUserSuccessOfInsert(HttpServletRequest request, HttpServletResponse response) {
+        request.setAttribute("resultTitle_1", "Congratulations!");
+        request.setAttribute("resultTitle_2", "You're a TwistedTrail Author");
+        request.setAttribute("resultMessage", "Your story, <em>" + request.getParameter("storyTitle")
+                + "</em>, has officially joined the TwistedTrail library.<br />");
+        request.setAttribute("linkMessage", "<a href=\"/storyReader\">Read it here!</a>");
+        String url = "/submitResultsPage.jsp";
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException exception) {
+            exception.printStackTrace();
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
     }
 }

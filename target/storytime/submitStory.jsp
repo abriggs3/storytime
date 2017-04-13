@@ -20,7 +20,7 @@
                 <p>Put your creative skills to work.</p>
                 <p>Compose your complete story here or paste it from another source.</p>
                 <p>Go wild, give root to your dreams. Just remember, this is a friendly and supportive community.
-                    Your submission must be YOURS (don't be that <em>re-posting, non-crediting douche</em> everyone hates),
+                    Your submission must be YOURS (don't be a <em>re-posting, non-crediting douche</em>),
                     a complete story (don't leave readers hanging) and must follow the TwistedTrail
                     <a href="rulesAndregulations.jsp">rules and regulations</a>
                     to avoid being flagged and subsequently deleted.</p>
@@ -49,6 +49,7 @@
                         <h6 class="clickForAdditionalInformation"
                             id="getTitleInformation"
                             onclick="toggleExplanation(1);">Guidelines for Titles</h6>
+                        <h4 class="importantMessage">${errorMessage}</h4>
                     </div>
                     <div class="form-group"> <!-- description field -->
                         <label class="control-label requiredField" for="storyShortDescription">One sentence summary</label>
