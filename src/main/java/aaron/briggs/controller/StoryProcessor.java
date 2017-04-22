@@ -44,15 +44,12 @@ public class StoryProcessor extends HttpServlet {
         paragraphArrayList = new ArrayList<Paragraph>();
         nameOfForm = request.getParameter("formName");
 
-
         story.setStoryTitle(request.getParameter("storyTitle"));
         story.setStorySummary(request.getParameter("storyShortDescription"));
         story.setStoryAgeRating(Integer.parseInt(request.getParameter("ageRating")));
         story.setStoryType(request.getParameter("contentType"));
         story.setStoryGenre(request.getParameter("typeDropdown"));
         story.setStoryBasedOnGenre(request.getParameter("basedOnCustomGenre"));
-
-
 
         String fullSubmittedText = request.getParameter("story");
         String[] storyParagraphs = fullSubmittedText.split("(?<=\\?\\r\\n\\r\\n)|(?<=\\.\r\\n\\r\\n)|(?<=!\\r\\n\\r\\n)");
@@ -79,7 +76,6 @@ public class StoryProcessor extends HttpServlet {
                 break;
             default :
                 System.out.println("The switch statement that reports the results of insert has failed. Bummer.");
-
         }
     }
 
@@ -91,7 +87,7 @@ public class StoryProcessor extends HttpServlet {
                 + "</em>, is already in the TwistedTrail library.<br />"
                 + "All titles must be unique.");
         request.setAttribute("linkMessage", "<a href=\"/submitStory.jsp\">Let me fix it!</a>");
-//TODO    change submitStory.jsp to a servlet that can repopulate the form
+
         String url = "/submitResultsPage.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         try {
@@ -104,11 +100,19 @@ public class StoryProcessor extends HttpServlet {
     }
 
     private void displayToUserSuccessOfInsert(HttpServletRequest request, HttpServletResponse response) {
+        String storyTitle = request.getParameter("storyTitle");
+        int storyId = databaseInsertProcessor.getValueOfAutoIdReturnedFromInsert();
+        request.setAttribute("storyId", storyId);
         request.setAttribute("resultTitle_1", "Congratulations!");
         request.setAttribute("resultTitle_2", "You're a TwistedTrail Author");
-        request.setAttribute("resultMessage", "Your story, <em>" + request.getParameter("storyTitle")
+        request.setAttribute("resultMessage", "Your story, <em>" + storyTitle
                 + "</em>, has officially joined the TwistedTrail library.<br />");
-        request.setAttribute("linkMessage", "<a href=\"/storyReader\">Read it here!</a>");
+
+        request.setAttribute("linkMessage", "<form method=\"get\" action=\"/storyReader\">\n" +
+                "<input type=\"hidden\" name=\"storyTitle\" value=\"" + storyTitle + "\">\n" +
+                "<input type=\"hidden\" name=\"storyId\" value=\"" + storyId + "\">\n" +
+                "<input type=\"Submit\" value=\"Read it here!\"/>");
+
         String url = "/submitResultsPage.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         try {

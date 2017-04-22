@@ -1,5 +1,6 @@
 package aaron.briggs.persistence;
 
+import aaron.briggs.entity.Paragraph;
 import aaron.briggs.entity.Story;
 
 import java.sql.*;
@@ -12,7 +13,7 @@ import java.util.List;
 public class DatabaseSelectProcessor {
 
     public List<Story> getAllStories() {
-
+//TODO replace * with true column names
         String sql = "SELECT * FROM story";
         System.out.println("ran the select all here is the statement " + sql);
         return executeQuery(sql);
@@ -39,10 +40,6 @@ public class DatabaseSelectProcessor {
         System.out.println("ran the select order by DATE; here is the statement " + sql);
         return executeQuery(sql);
     }
-
-
-
-
 
     private List<Story> executeQuery(String sql) {
 

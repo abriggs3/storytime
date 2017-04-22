@@ -9,7 +9,7 @@
             <div class="col-lg-12">
                 <hr>
                 <h2 class="intro-text text-center">the story author will be expressioned here ${author_readPage}<br />
-                    <strong>story title will be expressioned here ${storyTitle_readPage}</strong>
+                    <strong>${storyTitle_readPage}</strong>
                 </h2>
                 <hr>
             </div>

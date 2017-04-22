@@ -9,6 +9,7 @@ import java.util.List;
 
 
 public class DatabaseInsertProcessor {
+    private int valueOfAutoIdReturnedFromInsert = -9999; // if -9999 shows up as a value, something went wrong.
     /**
      *
      * @param nameOfForm the name of the from
@@ -24,7 +25,7 @@ public class DatabaseInsertProcessor {
         PreparedStatement preparedStatement;
         String sql;
         String resultOfInsertAttempt;
-        int valueOfAutoIdReturnedFromInsert = -9999; // if -9999 shows up as a value, something went wrong.
+
 
         try {
 
@@ -47,25 +48,7 @@ public class DatabaseInsertProcessor {
             database.connect();
             connection = database.getConnection();
             // insert form contents into story table
-            sql = "INSERT INTO  story (ID, storyTitle, storyRating, storyNumberOfRatings, storyAgeRating," +
-                    " storyNumberOfAgeRatings, userId, storyDatePublished, storyNumberOfPaths, storyType, genre," +
-                    " basedOnCustomGenre, summary)" +
-                    " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-            preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            preparedStatement.setString(1, null);
-            preparedStatement.setString(2, story.getStoryTitle());
-            preparedStatement.setInt(3, 0);
-            preparedStatement.setInt(4, 0);
-            preparedStatement.setInt(5, story.getStoryAgeRating());
-            preparedStatement.setInt(6, 1);
-            preparedStatement.setInt(7, 1);
-            preparedStatement.setTimestamp(8, null);
-            preparedStatement.setInt(9, 1);
-            preparedStatement.setString(10, story.getStoryType());
-            preparedStatement.setString(11, story.getStoryGenre());
-            preparedStatement.setString(12, story.getStoryBasedOnGenre());
-            preparedStatement.setString(13, story.getStorySummary());
-            preparedStatement.executeUpdate();
+            preparedStatement = getPreparedStatement(story, connection);
 
             resultSet = preparedStatement.getGeneratedKeys();
 
@@ -108,6 +91,40 @@ public class DatabaseInsertProcessor {
         }
 
         return resultOfInsertAttempt = "successful_insert";
+    }
+
+    private PreparedStatement getPreparedStatement(Story story, Connection connection) throws SQLException {
+        String sql;
+        PreparedStatement preparedStatement;
+        sql = "INSERT INTO  story (ID, storyTitle, storyRating, storyNumberOfRatings, storyAgeRating," +
+                " storyNumberOfAgeRatings, userId, storyDatePublished, storyNumberOfPaths, storyType, genre," +
+                " basedOnCustomGenre, summary)" +
+                " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        preparedStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+        preparedStatement.setString(1, null);
+        preparedStatement.setString(2, story.getStoryTitle());
+        preparedStatement.setInt(3, 0);
+        preparedStatement.setInt(4, 0);
+        preparedStatement.setInt(5, story.getStoryAgeRating());
+        preparedStatement.setInt(6, 1);
+        preparedStatement.setInt(7, 1);
+        preparedStatement.setTimestamp(8, null);
+        preparedStatement.setInt(9, 1);
+        preparedStatement.setString(10, story.getStoryType());
+        preparedStatement.setString(11, story.getStoryGenre());
+        preparedStatement.setString(12, story.getStoryBasedOnGenre());
+        preparedStatement.setString(13, story.getStorySummary());
+        preparedStatement.executeUpdate();
+        return preparedStatement;
+    }
+
+    /**
+     * This method allows other classes to get the value.
+     * @return valueOfAutoIdReturnedFromInsert the auto generated id value for the story
+     */
+
+    public int getValueOfAutoIdReturnedFromInsert() {
+        return valueOfAutoIdReturnedFromInsert;
     }
 }
 
